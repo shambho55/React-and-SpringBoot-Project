@@ -1,11 +1,10 @@
-function ToDoRowItem(){
-
+function ToDoRowItem(props){
     return (
 
         <tr>
-            <th scope='col'>1</th>
-            <td>Nutanix Read Blog</td>
-            <td>Myself</td>
+            <th scope='col'>{props.rowNumber}</th>
+            <td>{props.rowDescription}</td>
+            <td>{props.rowAssigned}</td>
         </tr>
 
     )
