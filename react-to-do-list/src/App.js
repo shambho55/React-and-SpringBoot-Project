@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import ToDoRowItem from './components/ToDoRowItem';
 
 function App() {
   return (
@@ -19,13 +20,7 @@ function App() {
               </tr>
             </thead> 
             <tbody>
-              <tr>
-                <th scope='col'>1</th>
-                <td>2 DSA Questions</td>
-                <td>Myself</td>
-              </tr>
-            </tbody>
-            <tbody>
+              <ToDoRowItem />
               <tr>
                 <th scope='col'>2</th>
                 <td>Java Project</td>
