@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import ToDoRowItem from './components/ToDoRowItem';
+import ToDoTable from './components/ToDoTable.js';
 
 function App() {
   
@@ -19,20 +18,7 @@ function App() {
           To Do's List
         </div>
         <div className='card-body'>
-          <table className='table table-hover'>
-            <thead>
-              <tr>
-                <th scope='col'>#</th>
-                <th scope='col'>Description</th>
-                <th scope='col'>Assigned</th>
-              </tr>
-            </thead> 
-            <tbody>
-              <ToDoRowItem rowNumber={todos[0].rowNumber} rowDescription={todos[0].rowDescription} rowAssigned={todos[0].rowAssigned}/>
-              <ToDoRowItem rowNumber={todos[1].rowNumber} rowDescription={todos[1].rowDescription} rowAssigned={todos[1].rowAssigned}/>
-              <ToDoRowItem rowNumber={todos[2].rowNumber} rowDescription={todos[2].rowDescription} rowAssigned={todos[2].rowAssigned}/>
-            </tbody>
-          </table>
+          <ToDoTable todos={todos}/>
         </div>
       </div>
     </div>
