@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import ToDoTable from './components/ToDoTable.js';
 import NewToDoForm from './components/NewToDoForm.js';
@@ -14,9 +14,13 @@ function App() {
   ])
   
   const addToDo = (description,assigned) => {
-
-    if(todos.length > 1){
-
+    let rowNumber = 0;
+    if(todos.length > 0){
+      rowNumber = todos[todos.length - 1].rowNumber + 1;
+    }
+    else{
+      rowNumber = 1;
+    }
       const newToDo = {
         rowNumber : todos.length + 1,
         rowDescription : description,
@@ -25,8 +29,6 @@ function App() {
 
       setTodos(todos => [...todos,newToDo]);
       console.log(todos);
-
-    }
 
   }
 

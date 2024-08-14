@@ -20,7 +20,9 @@ function ToDoTable(props){
             </thead>
             <tbody>
                 {props.todos.map(todo => (
-                    <ToDoRowItem rowNumber = {todo.rowNumber}
+                    <ToDoRowItem 
+                    key={todo.rowNumber}
+                    rowNumber = {todo.rowNumber}
                     rowDescription = {todo.rowDescription}
                     rowAssigned = {todo.rowAssigned}/>
                 ))}
