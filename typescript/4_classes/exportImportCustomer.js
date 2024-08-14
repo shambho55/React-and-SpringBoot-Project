@@ -1,5 +1,7 @@
 "use strict";
-class CustomerL {
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.exportImportCustomer = void 0;
+class exportImportCustomer {
     constructor(_firstName, _lastName) {
         this._firstName = _firstName;
         this._lastName = _lastName;
@@ -17,7 +19,5 @@ class CustomerL {
         this._lastName = value;
     }
 }
+exports.exportImportCustomer = exportImportCustomer;
 console.log("Below customer is created using constructor : ");
-let customer9 = new CustomerL("HariRam", "VyaasJi");
-console.log(customer9.firstName);
-console.log(customer9.lastName);
