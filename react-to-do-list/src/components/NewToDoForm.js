@@ -1,9 +1,21 @@
 import React, { useState } from 'react';
 
-function NewToDoForm(){
+function NewToDoForm(props){
 
     const [assigned,setAssigned] = useState();
     const [description,setDescription] = useState();
+
+    const submitToDo = () => {
+
+        if(description !== '' && assigned !== ''){
+
+            props.addToDo(description,assigned);
+            setDescription('');
+            setAssigned('');
+
+        }
+
+    }
 
     /*
     const descriptionChange = (event) => {
@@ -44,7 +56,7 @@ function NewToDoForm(){
                     value={description}>
                     </textarea>
                 </div> 
-                <button type='button' className='btn btn-primary'>Add To Do</button>
+                <button type='button' className='btn btn-primary' onClick={submitToDo}>Add To Do</button>
             </form>
         </div>
 
