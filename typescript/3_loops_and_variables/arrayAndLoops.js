@@ -1,3 +1,4 @@
+"use strict";
 var books = ['one man punch', 'rich dad poor dad', 'through channel', "it's my life"];
 for (var _i = 0, books_1 = books; _i < books_1.length; _i++) {
     var book = books_1[_i];
