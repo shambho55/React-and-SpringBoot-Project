@@ -1,10 +1,10 @@
-var Customer = /** @class */ (function () {
-    function Customer(theFirst, theLast) {
+"use strict";
+class Customer8 {
+    constructor(theFirst, theLast) {
         this.firstName = theFirst;
         this.lastName = theLast;
     }
-    return Customer;
-}());
+}
 /*
 let customer1 = new Customer();
 
@@ -15,6 +15,6 @@ console.log(customer1.firstName);
 console.log(customer1.lastName);
 */
 console.log("Below customer is created using constructor : ");
-var customer2 = new Customer("HariRam", "VyaasJi");
-console.log(customer2.firstName);
-console.log(customer2.lastName);
+let customer1 = new CustomerB("HariRam", "VyaasJi");
+console.log(customer1.firstName);
+console.log(customer1.lastName);

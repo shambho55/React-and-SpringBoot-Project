@@ -1,4 +1,4 @@
-class Customer{
+class Customer8{
 
     firstName:string;
     lastName:string;
@@ -24,6 +24,6 @@ console.log(customer1.lastName);
 
 console.log("Below customer is created using constructor : ");
 
-let customer2 = new Customer("HariRam","VyaasJi");
-console.log(customer2.firstName);
-console.log(customer2.lastName);
+let customer1 = new CustomerB("HariRam","VyaasJi");
+console.log(customer1.firstName);
+console.log(customer1.lastName);

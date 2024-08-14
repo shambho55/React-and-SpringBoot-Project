@@ -1,5 +1,5 @@
 "use strict";
-class CustomerP {
+class CustomerB {
     constructor(theFirst, theLast) {
         this._firstName = theFirst;
         this._lastName = theLast;
@@ -18,6 +18,6 @@ class CustomerP {
     }
 }
 console.log("Below customer is created using constructor : ");
-let customer4 = new CustomerP("HariRam", "VyaasJi");
-console.log(customer4.firstName);
-console.log(customer4.lastName);
+let customer7 = new CustomerB("HariRam", "VyaasJi");
+console.log(customer7.firstName);
+console.log(customer7.lastName);
