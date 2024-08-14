@@ -22,13 +22,23 @@ function App() {
       rowNumber = 1;
     }
       const newToDo = {
-        rowNumber : todos.length + 1,
+        rowNumber : rowNumber,
         rowDescription : description,
         rowAssigned : assigned
       }
 
       setTodos(todos => [...todos,newToDo]);
       console.log(todos);
+
+  }
+
+  const deleteToDo = (deleteToDoRowNumber) => {
+
+    let filtered = todos.filter(function(value) {
+      return value.rowNumber !== deleteToDoRowNumber;
+    })
+
+    setTodos(filtered);
 
   }
 
@@ -40,8 +50,8 @@ function App() {
           To Do's List
         </div>
         <div className='card-body'>
-          <ToDoTable todos={todos}/>
-          <button className='btn btn-primary' onClick={addToDo}>
+          <ToDoTable todos={todos} deleteToDo={deleteToDo}/>
+          <button className='btn btn-primary'>
             Add new ToDo
           </button>
           <NewToDoForm addToDo = {addToDo}/>

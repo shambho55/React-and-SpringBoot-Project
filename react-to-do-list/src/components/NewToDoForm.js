@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 function NewToDoForm(props){
 
-    const [assigned,setAssigned] = useState();
-    const [description,setDescription] = useState();
+    const [assigned,setAssigned] = useState('');
+    const [description,setDescription] = useState('');
 
     const submitToDo = () => {
 
