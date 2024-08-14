@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import './App.css';
 import ToDoTable from './components/ToDoTable.js';
+import NewToDoForm from './components/NewToDoForm.js';
 
 function App() {
   
@@ -41,6 +42,7 @@ function App() {
           <button className='btn btn-primary' onClick={addToDo}>
             Add new ToDo
           </button>
+          <NewToDoForm />
         </div>
       </div>
     </div>
