@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
-import ToDoTable from './components/ToDoTable.js';
-import NewToDoForm from './components/NewToDoForm.js';
+import {ToDoTable} from './components/ToDoTable';
+import {NewToDoForm} from './components/NewToDoForm';
 
 function App() {
   
@@ -15,7 +15,7 @@ function App() {
     {rowNumber: 4, rowDescription: "Charge Phone Battery", rowAssigned: "Myself"}
   ])
   
-  const addToDo = (description,assigned) => {
+  const addToDo = (description : string,assigned:string) => {
     let rowNumber = 0;
     if(todos.length > 0){
       rowNumber = todos[todos.length - 1].rowNumber + 1;
@@ -34,7 +34,7 @@ function App() {
 
   }
 
-  const deleteToDo = (deleteToDoRowNumber) => {
+  const deleteToDo = (deleteToDoRowNumber:number) => {
 
     let filtered = todos.filter(function(value) {
       return value.rowNumber !== deleteToDoRowNumber;

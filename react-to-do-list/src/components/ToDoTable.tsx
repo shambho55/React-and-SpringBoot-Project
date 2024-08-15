@@ -1,6 +1,10 @@
-import ToDoRowItem from './ToDoRowItem.js';
+import {ToDoRowItem} from './ToDoRowItem';
+import React from 'react';
 
-function ToDoTable(props){
+export const ToDoTable : React.FC <{
+    todos : ToDoModel[],deleteToDo:Function
+}> = 
+(props) => {
 
     return (
 
