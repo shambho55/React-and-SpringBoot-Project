@@ -37,5 +37,3 @@ export const ToDoTable : React.FC <{
     )
 
 }
-
-export default ToDoTable;
